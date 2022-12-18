@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--page html-->
+
+<head>
+  <!-- fournit des informations générales sur le document-->
+  <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+  <!--permet d'intégrer une image dans le titre du document-->
+  <link href="style.css" rel="stylesheet">
+  <!--L'élément <link> spécifie les relations entre le document actuel et une ressource externe.-->
+  <meta name="description" content="Site non officiel du Real Madrid">
+  <!--Mettre une description a son site-->
+  <meta charset="utf-8">
+  <!--attribut spécifique pour le codage des caractères en HTML-->
+  <title>Real Madrid</title>
+  <!--Titre du document de l'onglet-->
+</head>
+
+<body>
+
+  <header>
+    <!--cet élément prend en charge les attributs universels.-->
+    <img src="/image/banniere2.png" alt="Logo Real de Mardid">
+    <!--inserer une image a partir d'un fichier-->
+    <nav>
+      <!--<nav> représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page-->
+      <ul>
+        <!-- <ul> représente une liste d'éléments sans ordre particulier.-->
+        <li><a href="../index.html">Accueil</a></li>
+        <!--<li> est utilisé pour représenter un élément dans une liste-->
+        <li class="deroulant">
+          <!--represente l'elément de la liste "deroulant"-->
+          <a href="#">L'équipe premiere </a>
+          <!---->
+          <ul class="sous">
+            <li><a href="equipe_premiere/effectif.html">Effectif</a></li>
+            <!--Renseignez ou est le dossier-->
+            <li><a href="equipe_premiere/classement.html">Classement</a></li>
+          </ul>
+        </li>
+        <li class="deroulant">
+          <a href="#">Club</a>
+          <ul class="sous">
+            <li><a href="club/palmares.html">Palmares</a></li>
+            <li><a href="club/histoire.html">Histoire</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <img class="centre" src="image/real_equipe.png" alt="equipe">
+  <!--centrer l'image dans la page.-->
+  <ul>
+    <li><a href="https://www.realmadrid.com/fr">Site Du Real Madrid</a></li>
+    <!--lien vers un site en dehors de notre pag web-->
+  </ul>
+
+  <button onclick="myFunction()">Switch mode</button>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark");
+    }
+  </script>
+
+</body>
+<!--représente le contenu principal du document-->
+
+</html>
+<!--page html-->

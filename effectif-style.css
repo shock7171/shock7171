@@ -1,0 +1,32 @@
+
+figure.gallery {
+  /*représente un contenu autonome avec une image*/
+  margin: 5px;
+  /* définit la taille des marges sur les quatre côtés de l'élément*/
+  border: 1px solid #ccc;
+  /*bordure en une certaine taille et gris*/
+  float: left;
+  /*indique qu'un élément doit être retiré du flux normal et doit être placé sur le côté droit ou sur le côté gauche de son conteneur.Ducoup ici a gauche*/
+  width: 180px;
+  /*permet de définir la largeur de la boîte du contenu d'un élément. */
+}
+
+figure.gallery:hover {
+  /*hover permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur, sans nécessairement l'activer.*/
+  border: 1px solid #777;
+  /*bordure en une certaine taille et gris foncer*/
+}
+
+figure.gallery img {
+  width: 100%;
+  height: auto;
+  /*La propriété CSS height spécifie la hauteur d'un élément*/
+}
+
+figcaption.desc {
+  /*Le tag <figcaption>est utilisé pour ajouter une légende ou des explications à son contenu.*/
+  padding: 15px;
+  /*padding est une propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément*/
+  text-align: center;
+  /*Aligné le text au centre*/
+}

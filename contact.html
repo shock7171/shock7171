@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+  <title>Contact</title>
+  <link href="contact.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <p><img src="/image/banniere2.png" alt="Real"></p>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Accueil</a></li>
+      <li class="deroulant">
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <main>
+    <div class="contactez-nous">
+      <h1>Contactez-nous</h1>
+      <p>N'hésitez pas à laisser un avis sur le site</p>
+      <form
+        action="mailto:mdallah.ali@etu.univ-amu.fr,raphael.de-sousa-guedes@etu.univ-amu.fr?content-type=text/html&amp;subject=Avis%20Site%20Web"
+        method="post" enctype="text/plain">
+        <!--'élément HTML <form> représente un formulaire, c'est-à-dire une section d'un document qui contient des contrôles interactifs permettant à un utilisateur de fournir des informations-->
+        <div>
+          <label for="nom">Nom: </label>
+          <!--<label> représente une légende pour un objet d'une interface utilisateur-->
+          <input type="text" id="nom" name="nom" placeholder="Nom">
+        </div>
+        <div>
+          <label for="email">E-mail: </label>
+          <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+          <!--il est utilisé pour créer un contrôle interactif dans un formulaire web qui permet à l'utilisatrice ou l'utilisateur de saisir des données-->
+        </div>
+        <div>
+          <label for="message">Commentaire: </label>
+          <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+          <!--L'élément <textarea> est souvent utilisé dans un formulaire, pour collecter des entrées d'utilisateurs comme des commentaires ou des critiques-->
+        </div>
+        <div>
+          <button type="submit">Envoyer</button>
+          <!--Bouton envoyer pour l'avis-->
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

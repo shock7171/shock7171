@@ -1,0 +1,44 @@
+.container { 
+  /*la fonction container sert a mettre toute mes tableaux(sections) en vertical sur ma page web*/
+  justify-content: center; 
+  /*La propriété CSS justifier-content définit la manière dont le navigateur distribue l'espace entre et autour des éléments de contenu le long de l'axe principal d'un conteneur flexible et de l'axe en ligne d'un conteneur de grille.*/
+  display: flex;
+  /*L'axe principal est défini par la propriété flex-direction et l'axe secondaire est l'axe qui lui est perpendiculaire*/
+  flex-direction: column;
+  /*L'axe principal est defini en colonne*/
+  align-items:center;
+  /*Aligné au centre les tableaux*/
+}
+
+
+section {
+  /*L'élément HTML <section> représente une section générique d'un document*/
+  background-color: lightgrey;
+  /*mettre les couleurs du fond en gris */
+  width: 300px;
+  /*permet de définir la largeur de la boîte du contenu d'un élément. */
+  border: 15px solid black;
+  /*bordure en une certaine taille et noir*/
+  padding: 50px;
+  /*est une propriété raccourcie qui permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément */
+  margin: 20px;
+  /* définit la taille des marges sur les quatre côtés de l'élément*/
+}
+
+.btn{
+  height: 60px;
+  width: 60px;
+  background-color: grey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.icone{
+  width: 50px;
+}

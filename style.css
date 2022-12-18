@@ -1,0 +1,113 @@
+/*Reset CSS*/
+body{
+  background-color:#F0FFFF;
+  color: rgb(0, 0, 0);
+}
+/*Représentation hexadécimale de la couleur de fond*/
+div
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+/*La propriété font-family permet de définir une liste, ordonnée par priorité, de polices à utiliser pour mettre en forme le texte de l'élément ciblé.*/
+/*La propriété abrégée CSS margin définit la zone de marge sur les quatre côtés d'un élément.*/
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+/*Le list-style-typespécifie le type de marqueur d'élément de liste dans une liste.*/
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+body
+{
+  margin : 0;
+  padding : 0;
+  width: 100%;
+  background-color:#F0FFFF;
+}
+
+h3{
+  text-align: center;
+}
+img.centre{
+  text-align: center;
+  margin: auto;
+  display:flex;
+}
+
+button{
+  cursor: pointer;
+  border: 1px solid #555;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+.dark{
+  background-color: #555;
+  color: #e6e6e6;
+}
